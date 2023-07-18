@@ -16,7 +16,6 @@ sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_genera
 # 修改主机名 OP
 sed -i 's/ImmortalWrt/OpenWrt/g'  package/base-files/files/bin/config_generate
 
-src-git packages https://git.openwrt.org/feed/packages.git
 # 替换源 
 sed -i 's,mirrors.vsean.net/openwrt,mirrors.pku.edu.cn/immortalwrt,g'  package/emortal/default-settings/files/99-default-settings-chinese
 
