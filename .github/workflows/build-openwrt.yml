@@ -11,8 +11,10 @@
 name: Build OpenWrt
 
 env:
-  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
-  REPO_BRANCH: openwrt-21.02
+  #REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  #REPO_BRANCH: openwrt-21.02
+  REPO_URL: https://github.com/padavanonly/immortalwrtARM
+  REPO_BRANCH: openwrt-18.06
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: 360t7.config
   DIY_P1_SH: diy-part1.sh
@@ -37,7 +39,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
 
     steps:
     - name: Checkout
